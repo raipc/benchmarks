@@ -72,7 +72,7 @@ public class SplitBenchmark {
 
     @Benchmark
     public String[] splitWithJdkSplitRegex() {
-       return COMMANDS.split("\n\r");
+       return COMMANDS.split("\r\n");
     }
 
 }
