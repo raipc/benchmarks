@@ -61,8 +61,18 @@ public class SplitBenchmark {
     }
 
     @Benchmark
-    public String[] splitWithApacheCommons() {
+    public String[] splitWithApacheCommonsChar() {
+        return StringUtils.split(COMMANDS, '\n');
+    }
+
+    @Benchmark
+    public String[] splitWithApacheCommonsSingleCharString() {
         return StringUtils.split(COMMANDS, "\n");
+    }
+
+    @Benchmark
+    public String[] splitWithApacheCommons() {
+        return StringUtils.split(COMMANDS, "\r\n");
     }
 
     @Benchmark
