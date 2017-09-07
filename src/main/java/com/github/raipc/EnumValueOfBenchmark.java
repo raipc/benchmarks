@@ -1,4 +1,4 @@
-package xyz.raipc;
+package com.github.raipc;
 
 
 import org.openjdk.jmh.annotations.*;

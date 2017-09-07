@@ -29,7 +29,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package xyz.raipc;
+package com.github.raipc;
 
 import org.apache.commons.io.Charsets;
 import org.apache.commons.io.FileUtils;
