@@ -3,6 +3,7 @@ package com.github.raipc;
 import com.google.common.collect.Iterables;
 import org.openjdk.jmh.annotations.*;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
@@ -54,7 +55,7 @@ public class ArrayListRemoveBenchmark {
                 iterator.remove();
             }
         }
-        assertListFiltered();
+        assertListFiltered(numbers);
         return numbers;
     }
 
@@ -63,8 +64,47 @@ public class ArrayListRemoveBenchmark {
         assertListPopulated();
         final Predicate<Integer> pred = predicate.predicate;
         numbers.removeIf(pred);
-        assertListFiltered();
+        assertListFiltered(numbers);
         return numbers;
+    }
+
+    @Benchmark
+    public List<Integer> addToNewArray() {
+        assertListPopulated();
+        final Predicate<Integer> pred = predicate.predicate;
+        final List<Integer> result = new ArrayList<>();
+        for (Integer number : numbers) {
+            if (!pred.test(number)) {
+                result.add(number);
+            }
+        }
+        assertListFiltered(result);
+        return result;
+    }
+
+    @Benchmark
+    public List<Integer> smartAddToNewArray() {
+        assertListPopulated();
+        final Predicate<Integer> pred = predicate.predicate;
+        boolean initializedNewList = false;
+        List<Integer> result = numbers;
+        final int size = numbers.size();
+        for (int i = 0; i < size; i++) {
+            Integer number = numbers.get(i);
+            if (!pred.test(number)) {
+                if (initializedNewList) {
+                    result.add(number);
+                }
+            } else if (!initializedNewList) {
+                result = new ArrayList<>(size - 1);
+                for (int j = 0; j < i; j++) {
+                    result.add(numbers.get(j));
+                }
+                initializedNewList = true;
+            }
+        }
+        assertListFiltered(result);
+        return result;
     }
 
     @Benchmark
@@ -79,7 +119,7 @@ public class ArrayListRemoveBenchmark {
                 }
             }
         }
-        assertListFiltered();
+        assertListFiltered(numbers);
         return numbers;
     }
 
@@ -88,7 +128,7 @@ public class ArrayListRemoveBenchmark {
         assertListPopulated();
         final Predicate<Integer> pred = predicate.predicate;
         Iterables.removeIf(numbers, pred::test);
-        assertListFiltered();
+        assertListFiltered(numbers);
         return numbers;
     }
     
@@ -98,7 +138,7 @@ public class ArrayListRemoveBenchmark {
         }
     }
 
-    private void assertListFiltered() {
+    private void assertListFiltered(List<Integer> numbers) {
         if (numbers.size() != predicate.afterFiltering) {
             throw new RuntimeException("List is not filtered. List size: " + numbers.size());
         }
