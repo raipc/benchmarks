@@ -1,0 +1,223 @@
+package com.github.raipc.data;
+
+public class MultiMethodClass {
+	private String str1;
+	private String str2;
+
+	public String getStr1() {
+		return str1;
+	}
+
+	public void setStr1(String str1) {
+		this.str1 = str1;
+	}
+
+	public String getStr2() {
+		return str2;
+	}
+
+	public void setStr2(String str2) {
+		this.str2 = str2;
+	}
+
+	public void doMethod1() {}
+	public void doMethod2() {}
+	public void doMethod3() {}
+	public void doMethod4() {}
+	public void doMethod5() {}
+	public void doMethod6() {}
+	public void doMethod7() {}
+	public void doMethod8() {}
+	public void doMethod9() {}
+	public void doMethod10() {}
+	public void doMethod11() {}
+	public void doMethod12() {}
+	public void doMethod13() {}
+	public void doMethod14() {}
+	public void doMethod15() {}
+	public void doMethod16() {}
+	public void doMethod17() {}
+	public void doMethod18() {}
+	public void doMethod19() {}
+	public void doMethod20() {}
+	public void doMethod21() {}
+	public void doMethod22() {}
+	public void doMethod23() {}
+	public void doMethod24() {}
+	public void doMethod25() {}
+	public void doMethod26() {}
+	public void doMethod27() {}
+	public void doMethod28() {}
+	public void doMethod29() {}
+	public void doMethod30() {}
+	public void doMethod31() {}
+	public void doMethod32() {}
+	public void doMethod33() {}
+	public void doMethod34() {}
+	public void doMethod35() {}
+	public void doMethod36() {}
+	public void doMethod37() {}
+	public void doMethod38() {}
+	public void doMethod39() {}
+	public void doMethod40() {}
+	public void doMethod41() {}
+	public void doMethod42() {}
+	public void doMethod43() {}
+	public void doMethod44() {}
+	public void doMethod45() {}
+	public void doMethod46() {}
+	public void doMethod47() {}
+	public void doMethod48() {}
+	public void doMethod49() {}
+	public void doMethod50() {}
+	public void doMethod51() {}
+	public void doMethod52() {}
+	public void doMethod53() {}
+	public void doMethod54() {}
+	public void doMethod55() {}
+	public void doMethod56() {}
+	public void doMethod57() {}
+	public void doMethod58() {}
+	public void doMethod59() {}
+	public void doMethod60() {}
+	public void doMethod61() {}
+	public void doMethod62() {}
+	public void doMethod63() {}
+	public void doMethod64() {}
+	public void doMethod65() {}
+	public void doMethod66() {}
+	public void doMethod67() {}
+	public void doMethod68() {}
+	public void doMethod69() {}
+	public void doMethod70() {}
+	public void doMethod71() {}
+	public void doMethod72() {}
+	public void doMethod73() {}
+	public void doMethod74() {}
+	public void doMethod75() {}
+	public void doMethod76() {}
+	public void doMethod77() {}
+	public void doMethod78() {}
+	public void doMethod79() {}
+	public void doMethod80() {}
+	public void doMethod81() {}
+	public void doMethod82() {}
+	public void doMethod83() {}
+	public void doMethod84() {}
+	public void doMethod85() {}
+	public void doMethod86() {}
+	public void doMethod87() {}
+	public void doMethod88() {}
+	public void doMethod89() {}
+	public void doMethod90() {}
+	public void doMethod91() {}
+	public void doMethod92() {}
+	public void doMethod93() {}
+	public void doMethod94() {}
+	public void doMethod95() {}
+	public void doMethod96() {}
+	public void doMethod97() {}
+	public void doMethod98() {}
+	public void doMethod99() {}
+	public void doMethod100() {}
+	public void doMethod101() {}
+	public void doMethod102() {}
+	public void doMethod103() {}
+	public void doMethod104() {}
+	public void doMethod105() {}
+	public void doMethod106() {}
+	public void doMethod107() {}
+	public void doMethod108() {}
+	public void doMethod109() {}
+	public void doMethod110() {}
+	public void doMethod111() {}
+	public void doMethod112() {}
+	public void doMethod113() {}
+	public void doMethod114() {}
+	public void doMethod115() {}
+	public void doMethod116() {}
+	public void doMethod117() {}
+	public void doMethod118() {}
+	public void doMethod119() {}
+	public void doMethod120() {}
+	public void doMethod121() {}
+	public void doMethod122() {}
+	public void doMethod123() {}
+	public void doMethod124() {}
+	public void doMethod125() {}
+	public void doMethod126() {}
+	public void doMethod127() {}
+	public void doMethod128() {}
+	public void doMethod129() {}
+	public void doMethod130() {}
+	public void doMethod131() {}
+	public void doMethod132() {}
+	public void doMethod133() {}
+	public void doMethod134() {}
+	public void doMethod135() {}
+	public void doMethod136() {}
+	public void doMethod137() {}
+	public void doMethod138() {}
+	public void doMethod139() {}
+	public void doMethod140() {}
+	public void doMethod141() {}
+	public void doMethod142() {}
+	public void doMethod143() {}
+	public void doMethod144() {}
+	public void doMethod145() {}
+	public void doMethod146() {}
+	public void doMethod147() {}
+	public void doMethod148() {}
+	public void doMethod149() {}
+	public void doMethod150() {}
+	public void doMethod151() {}
+	public void doMethod152() {}
+	public void doMethod153() {}
+	public void doMethod154() {}
+	public void doMethod155() {}
+	public void doMethod156() {}
+	public void doMethod157() {}
+	public void doMethod158() {}
+	public void doMethod159() {}
+	public void doMethod160() {}
+	public void doMethod161() {}
+	public void doMethod162() {}
+	public void doMethod163() {}
+	public void doMethod164() {}
+	public void doMethod165() {}
+	public void doMethod166() {}
+	public void doMethod167() {}
+	public void doMethod168() {}
+	public void doMethod169() {}
+	public void doMethod170() {}
+	public void doMethod171() {}
+	public void doMethod172() {}
+	public void doMethod173() {}
+	public void doMethod174() {}
+	public void doMethod175() {}
+	public void doMethod176() {}
+	public void doMethod177() {}
+	public void doMethod178() {}
+	public void doMethod179() {}
+	public void doMethod180() {}
+	public void doMethod181() {}
+	public void doMethod182() {}
+	public void doMethod183() {}
+	public void doMethod184() {}
+	public void doMethod185() {}
+	public void doMethod186() {}
+	public void doMethod187() {}
+	public void doMethod188() {}
+	public void doMethod189() {}
+	public void doMethod190() {}
+	public void doMethod191() {}
+	public void doMethod192() {}
+	public void doMethod193() {}
+	public void doMethod194() {}
+	public void doMethod195() {}
+	public void doMethod196() {}
+	public void doMethod197() {}
+	public void doMethod198() {}
+	public void doMethod199() {}
+	public void doMethod200() {}
+}
