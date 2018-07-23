@@ -1,15 +1,16 @@
 package com.github.raipc;
 
 import com.github.raipc.impl.TimeUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.time.FastDateFormat;
 import org.joda.time.DateTimeZone;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 import org.joda.time.format.ISODateTimeFormat;
 import org.openjdk.jmh.annotations.*;
-import org.openjdk.jmh.profile.CompilerProfiler;
 import org.openjdk.jmh.profile.GCProfiler;
 import org.openjdk.jmh.profile.StackProfiler;
+import org.openjdk.jmh.results.format.ResultFormatType;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
@@ -23,7 +24,9 @@ import java.time.temporal.ChronoField;
 import java.time.temporal.IsoFields;
 import java.time.temporal.TemporalAccessor;
 import java.time.temporal.TemporalQueries;
-import java.util.*;
+import java.util.Locale;
+import java.util.Map;
+import java.util.TimeZone;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
@@ -31,30 +34,25 @@ import java.util.function.Supplier;
 @Warmup(iterations = 1, time = 5)
 @Measurement(iterations = 20)
 @BenchmarkMode(Mode.SampleTime)
-@OutputTimeUnit(TimeUnit.MICROSECONDS)
+@OutputTimeUnit(TimeUnit.SECONDS)
 @State(Scope.Benchmark)
-public abstract class DatePrintParseBenchmark {
-    private static final int SIZE = 10000;
-
+public abstract class DateBenchmarksSingleIteration {
     protected abstract ZoneId getZoneId();
     protected abstract java.time.format.DateTimeFormatter getJsr310Formatter();
     protected abstract DateTimeFormatter getJodaFormatter();
     protected abstract FastDateFormat getApacheFDF();
     protected abstract SimpleDateFormat getSimpleDateFormat();
 
-    long[] sourceTimestamps;
-    String[] dates;
-    long[] parseTimestamps;
+    long sourceTimestamp;
+    String date;
+    long parseTimestamp;
 
-    @Setup
+    @Setup(value = Level.Trial)
     public void setup() {
-        sourceTimestamps = new Random().longs(SIZE, 0L, System.currentTimeMillis()).toArray();
         final DateTimeFormatter format = getJodaFormatter();
-        dates = Arrays.stream(sourceTimestamps)
-                .boxed()
-                .map(format::print)
-                .toArray(String[]::new);
-        parseTimestamps = Arrays.stream(dates).mapToLong(format::parseMillis).toArray();
+        sourceTimestamp = RandomUtils.nextLong(0, System.currentTimeMillis());
+        date = format.print(sourceTimestamp);
+        parseTimestamp = format.parseMillis(date);
     }
 
     private static SimpleDateFormat prepareSdf(String format, TimeZone timeZone) {
@@ -65,92 +63,76 @@ public abstract class DatePrintParseBenchmark {
 
     @Benchmark
     public void printJoda() {
-        for (int i = 0; i < SIZE; i++) {
-            final String result = getJodaFormatter().print(sourceTimestamps[i]);
-            if (!result.equals(dates[i])) {
-                fail(dates[i], result);
-            }
+        final String result = getJodaFormatter().print(sourceTimestamp);
+        if (!result.equals(date)) {
+            fail(date, result);
         }
     }
 
     @Benchmark
     public void printJsr310() {
-        for (int i = 0; i < SIZE; i++) {
-            final ZonedDateTime temporal = ZonedDateTime.ofInstant(Instant.ofEpochMilli(sourceTimestamps[i]), getZoneId());
-            final String result = getJsr310Formatter().format(temporal);
-            if (!result.equals(dates[i])) {
-                fail(dates[i], result);
-            }
+        final ZonedDateTime temporal = ZonedDateTime.ofInstant(Instant.ofEpochMilli(sourceTimestamp), getZoneId());
+        final String result = getJsr310Formatter().format(temporal);
+        if (!result.equals(date)) {
+            fail(date, result);
         }
     }
 
     @Benchmark
     public void printSdf() {
-        for (int i = 0; i < SIZE; i++) {
-            final String result = getSimpleDateFormat().format(sourceTimestamps[i]);
-            if (!result.equals(dates[i])) {
-                fail(dates[i], result);
-            }
+        final String result = getSimpleDateFormat().format(sourceTimestamp);
+        if (!result.equals(date)) {
+            fail(date, result);
         }
+        
     }
 
     @Benchmark
     public void printFdf() {
-        for (int i = 0; i < SIZE; i++) {
-            final String result = getApacheFDF().format(sourceTimestamps[i]);
-            if (!result.equals(dates[i])) {
-                fail(dates[i], result);
-            }
+        final String result = getApacheFDF().format(sourceTimestamp);
+        if (!result.equals(date)) {
+            fail(date, result);
         }
+        
     }
 
     @Benchmark
     public void parseWithSdf() throws ParseException {
-        for (int i = 0; i < SIZE; i++) {
-            final long result = getSimpleDateFormat().parse(dates[i]).getTime();
-            if (result != parseTimestamps[i]) {
-                fail(parseTimestamps[i], result, dates[i]);
-            }
+        final long result = getSimpleDateFormat().parse(date).getTime();
+        if (result != parseTimestamp) {
+            fail(parseTimestamp, result, date);
         }
     }
 
     @Benchmark
     public void parseWithJoda() {
-        for (int i = 0; i < SIZE; i++) {
-            final long result = getJodaFormatter().parseMillis(dates[i]);
-            if (result != parseTimestamps[i]) {
-                fail(parseTimestamps[i], result, dates[i]);
-            }
+        final long result = getJodaFormatter().parseMillis(date);
+        if (result != parseTimestamp) {
+            fail(parseTimestamp, result, date);
         }
     }
 
     @Benchmark
     public void parseWithJsr310() {
-        for (int i = 0; i < SIZE; i++) {
-            final long result = ZonedDateTime.parse(dates[i], getJsr310Formatter()).toInstant().toEpochMilli();
-            if (result != parseTimestamps[i]) {
-                fail(parseTimestamps[i], result, dates[i]);
-            }
+        final long result = ZonedDateTime.parse(date, getJsr310Formatter()).toInstant().toEpochMilli();
+        if (result != parseTimestamp) {
+            fail(parseTimestamp, result, date);
         }
     }
 
     @Benchmark
     public void parseWithJsr310Offset() {
-        for (int i = 0; i < SIZE; i++) {
-            final long result = OffsetDateTime.parse(dates[i], getJsr310Formatter()).toInstant().toEpochMilli();
-            if (result != parseTimestamps[i]) {
-                fail(parseTimestamps[i], result, dates[i]);
-            }
+        final long result = OffsetDateTime.parse(date, getJsr310Formatter()).toInstant().toEpochMilli();
+        if (result != parseTimestamp) {
+            fail(parseTimestamp, result, date);
         }
     }
 
     @Benchmark
     public void parseWithFdf() throws ParseException {
-        for (int i = 0; i < SIZE; i++) {
-            final long result = getApacheFDF().parse(dates[i]).getTime();
-            if (result != parseTimestamps[i]) {
-                fail(parseTimestamps[i], result, dates[i]);
-            }
+        final long result = getApacheFDF().parse(date).getTime();
+        if (result != parseTimestamp) {
+            fail(parseTimestamp, result, date);
         }
     }
 
@@ -163,7 +145,7 @@ public abstract class DatePrintParseBenchmark {
         throw new IllegalStateException("Expected: " + expected + " but was " + result + " for input " + input);
     }
 
-    public abstract static class NewInstancePrinterBenchmark extends DatePrintParseBenchmark {
+    public abstract static class NewInstancePrinterBenchmark extends DateBenchmarksSingleIteration {
         private final ZoneId zoneId;
         private final Supplier<java.time.format.DateTimeFormatter> jsr310Formatter;
         private final Supplier<DateTimeFormatter> jodaFormatter;
@@ -209,7 +191,7 @@ public abstract class DatePrintParseBenchmark {
         }
     }
 
-    public abstract static class CachedPrinterBenchmark extends DatePrintParseBenchmark {
+    public abstract static class CachedPrinterBenchmark extends DateBenchmarksSingleIteration {
         private final ZoneId zoneId;
         private final java.time.format.DateTimeFormatter jsr310Formatter;
         private final DateTimeFormatter jodaFormatter;
@@ -264,143 +246,88 @@ public abstract class DatePrintParseBenchmark {
         private static final String PATTERN = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
         public DatePrintParseBenchmarkISO8601UTC() {
             super(() -> java.time.format.DateTimeFormatter.ofPattern(PATTERN, Locale.US).withZone(ZoneId.of("UTC")),
-                  () -> ISODateTimeFormat.dateTime().withLocale(Locale.US).withZoneUTC(),
-                  () -> FastDateFormat.getInstance(PATTERN, TimeZone.getTimeZone("UTC"), Locale.US),
-                  () -> prepareSdf(PATTERN, TimeZone.getTimeZone("UTC")));
+                    () -> ISODateTimeFormat.dateTime().withLocale(Locale.US).withZoneUTC(),
+                    () -> FastDateFormat.getInstance(PATTERN, TimeZone.getTimeZone("UTC"), Locale.US),
+                    () -> prepareSdf(PATTERN, TimeZone.getTimeZone("UTC")));
         }
 
         @Benchmark
         public void parseInstantWithJsr310() {
-            for (int i = 0; i < SIZE; i++) {
-                final long result = Instant.parse(dates[i]).toEpochMilli();
-                if (result != parseTimestamps[i]) {
-                    fail(parseTimestamps[i], result, dates[i]);
+            
+                final long result = Instant.parse(date).toEpochMilli();
+                if (result != parseTimestamp) {
+                    fail(parseTimestamp, result, date);
                 }
-            }
         }
 
         @Benchmark
         public void printWithCustomPrinterIso() {
-            for (int i = 0; i < SIZE; i++) {
-                final String result = TimeUtils.printIso8601(sourceTimestamps[i], true, false);
-                if (!result.equals(dates[i])) {
-                    fail(dates[i], result);
-                }
+            final String result = TimeUtils.printIso8601(sourceTimestamp, true, false);
+            if (!result.equals(date)) {
+                fail(date, result);
             }
-        }
+            }
 
         @Benchmark
         public void printWithCustomPrinterIsoOpt() {
-            for (int i = 0; i < SIZE; i++) {
-                final String result = TimeUtils.printIso8601OptUtc(sourceTimestamps[i], true);
-                if (!result.equals(dates[i])) {
-                    fail(dates[i], result);
-                }
+            final String result = TimeUtils.printIso8601OptUtc(sourceTimestamp, true);
+            if (!result.equals(date)) {
+                fail(date, result);
             }
         }
 
         @Benchmark
         public void parseWithCustomParserIso() {
-            for (int i = 0; i < SIZE; i++) {
-                final long result = TimeUtils.parseISO8601(dates[i]);
-                if (result != parseTimestamps[i]) {
-                    fail(parseTimestamps[i], result, dates[i]);
-                }
+            final long result = TimeUtils.parseISO8601(date);
+            if (result != parseTimestamp) {
+                fail(parseTimestamp, result, date);
             }
         }
 
         @Benchmark
         public void parseWithCustomParserJava8() {
-            for (int i = 0; i < SIZE; i++) {
-                final long result = TimeUtils.parseISO8601Java8(dates[i]);
-                if (result != parseTimestamps[i]) {
-                    fail(parseTimestamps[i], result, dates[i]);
-                }
+            final long result = TimeUtils.parseISO8601Java8(date);
+            if (result != parseTimestamp) {
+                fail(parseTimestamp, result, date);
             }
         }
 
-//        @Benchmark
-//        public void parseWithCustomParserJava8ODT() {
-//            for (int i = 0; i < SIZE; i++) {
-//                final long result = TimeUtils.parseISO8601Java8ODT(dates[i]);
-//                if (result != parseTimestamps[i]) {
-//                    fail(parseTimestamps[i], result, dates[i]);
-//                }
-//            }
-//        }
-//
-//        @Benchmark
-//        public void parseWithCustomParserJava8Nanos() {
-//            for (int i = 0; i < SIZE; i++) {
-//                final long result = TimeUtils.parseISO8601Nanos(dates[i]);
-//                if (result != parseTimestamps[i]) {
-//                    fail(parseTimestamps[i], result, dates[i]);
-//                }
-//            }
-//        }
-
-//        @Benchmark
-//        public void parseWithCustomParserJava8NanosOpt() {
-//            for (int i = 0; i < SIZE; i++) {
-//                final long result = TimeUtils.parseISO8601NanosOpt(dates[i]);
-//                if (result != parseTimestamps[i]) {
-//                    fail(parseTimestamps[i], result, dates[i]);
-//                }
-//            }
-//        }
-//
-//        @Benchmark
-//        public void parseWithCustomParserJava8NanosOpt1() {
-//            for (int i = 0; i < SIZE; i++) {
-//                final long result = TimeUtils.parseISO8601NanosOpt1(dates[i]);
-//                if (result != parseTimestamps[i]) {
-//                    fail(parseTimestamps[i], result, dates[i]);
-//                }
-//            }
-//        }
-
         @Benchmark
-        public void parseWithCustomParserJava8NanosOpt2() {
-            for (int i = 0; i < SIZE; i++) {
-                final long result = TimeUtils.parseISO8601NanosOpt(dates[i]);
-                if (result != parseTimestamps[i]) {
-                    fail(parseTimestamps[i], result, dates[i]);
-                }
+        public void parseWithCustomParserJava8Opt() {
+            final long result = TimeUtils.parseISO8601NanosOpt(date);
+            if (result != parseTimestamp) {
+                fail(parseTimestamp, result, date);
             }
         }
 
         @Benchmark
         public void parseWithCustomParserCached() {
-            for (int i = 0; i < SIZE; i++) {
-                final long result = TimeUtils.parseISO8601CachedCalendar(dates[i]);
-                if (result != parseTimestamps[i]) {
-                    fail(parseTimestamps[i], result, dates[i]);
-                }
+            final long result = TimeUtils.parseISO8601CachedCalendar(date);
+            if (result != parseTimestamp) {
+                fail(parseTimestamp, result, date);
             }
         }
     }
 
-    public static class DatePrintParseBenchmarkLocal extends CachedPrinterBenchmark {
+    public static class DatePrintParseBenchmarkLocal extends DateBenchmarksSingleIteration.CachedPrinterBenchmark {
         private static final String PATTERN = "yyyy-MM-dd HH:mm:ss";
         public DatePrintParseBenchmarkLocal() {
             super(() -> java.time.format.DateTimeFormatter.ofPattern(PATTERN, Locale.US).withZone(ZoneId.systemDefault()),
-                  () -> DateTimeFormat.forPattern(PATTERN).withZone(DateTimeZone.getDefault()).withLocale(Locale.US),
-                  () -> FastDateFormat.getInstance(PATTERN, TimeZone.getDefault(), Locale.US),
-                  () -> prepareSdf(PATTERN, TimeZone.getDefault()));
+                    () -> DateTimeFormat.forPattern(PATTERN).withZone(DateTimeZone.getDefault()).withLocale(Locale.US),
+                    () -> FastDateFormat.getInstance(PATTERN, TimeZone.getDefault(), Locale.US),
+                    () -> prepareSdf(PATTERN, TimeZone.getDefault()));
         }
 
         @Benchmark
         public void printWithCustomPrinterLocal() {
-            for (int i = 0; i < SIZE; i++) {
-                final String result = TimeUtils.printIso8601LocalSeconds(sourceTimestamps[i]);
-                if (!result.equals(dates[i])) {
-                    fail(dates[i], result);
-                }
+            final String result = TimeUtils.printIso8601OptLocal(sourceTimestamp, false);
+            if (!result.equals(date)) {
+                fail(date, result);
             }
         }
     }
 
-    public static class DatePrintParseBenchmarkCustomPattern extends NewInstancePrinterBenchmark {
+    public static class DatePrintParseBenchmarkCustomPattern extends DateBenchmarksSingleIteration.NewInstancePrinterBenchmark {
         private static final String PATTERN = "yyyyMMdd'T'HHmmss'Z'";
 
         private static final Map<String, java.time.format.DateTimeFormatter> cacheJavaTime = new ConcurrentHashMap<>();
@@ -415,7 +342,7 @@ public abstract class DatePrintParseBenchmark {
         }
     }
 
-    public static class DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache1 extends NewInstancePrinterBenchmark {
+    public static class DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache extends DateBenchmarksSingleIteration.NewInstancePrinterBenchmark {
         private static final String PATTERN = "yyyy-MM-dd";
 
         private static final java.time.format.DateTimeFormatter simple = java.time.format.DateTimeFormatter.ofPattern(PATTERN, Locale.US);
@@ -428,7 +355,7 @@ public abstract class DatePrintParseBenchmark {
                 .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
                 .toFormatter(Locale.US).withZone(ZoneId.systemDefault());
 
-        public DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache1() {
+        public DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache() {
             super(ZoneId.systemDefault(),
                     () -> cacheJavaTime,
                     () -> DateTimeFormat.forPattern(PATTERN).withLocale(Locale.US),
@@ -498,28 +425,29 @@ public abstract class DatePrintParseBenchmark {
 
         @Benchmark
         public void withManualParse() {
-            for (int i = 0; i < SIZE; i++) {
-                final long result = manualParse(dates[i]);
-                if (result != parseTimestamps[i]) {
-                    fail(parseTimestamps[i], result, dates[i]);
-                }
+            final long result = manualParse(date);
+            if (result != parseTimestamp) {
+                fail(parseTimestamp, result, date);
             }
         }
     }
 
     public static void main(String[] args) throws Exception {
         Options opt = new OptionsBuilder()
-                .include(".*DatePrintParseBenchmarkISO8601UTC.*")
-                .include(".*DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache1.*")
-                .include(".*DatePrintParseBenchmarkLocal.*")
-
+                .jvmArgs("-server", "-Xmx1024M")
+//                .include(".+parseWithCustomParserJava8Nanos.*")
+//                .include(".+parseWithCustomParser.*")
+                .include(".*DateBenchmarksSingleIteration.*DatePrintParseBenchmarkISO8601UTC.*")
+                .shouldDoGC(true)
                 .warmupIterations(1)
                 .warmupTime(TimeValue.seconds(5))
-                .measurementIterations(10)
+                .measurementTime(new TimeValue(3, TimeUnit.SECONDS))
+                .mode(Mode.SampleTime)
+                .measurementIterations(5)
                 .addProfiler( StackProfiler.class )
                 .addProfiler( GCProfiler.class )
-                .addProfiler( CompilerProfiler.class )
-                .forks(2)
+                .forks(1)
+                .resultFormat(ResultFormatType.JSON)
                 .build();
 
         new Runner(opt).run();
