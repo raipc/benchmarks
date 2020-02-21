@@ -1,0 +1,816 @@
+Benchmark                                                                                                                                      Mode      Cnt         Score     Error   Units
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf                                                              sample  4362562       930.476 ±  11.400   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:parseWithFdf·p0.00                                           sample                629.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:parseWithFdf·p0.50                                           sample                771.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:parseWithFdf·p0.90                                           sample                813.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:parseWithFdf·p0.95                                           sample                851.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:parseWithFdf·p0.99                                           sample               1186.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:parseWithFdf·p0.999                                          sample              12304.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:parseWithFdf·p0.9999                                         sample             228864.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:parseWithFdf·p1.00                                           sample            1503232.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·compiler.time.profiled                                      sample       20      1537.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·compiler.time.total                                         sample       20      2607.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·gc.alloc.rate                                               sample       20      1069.652 ±   8.564  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·gc.alloc.rate.norm                                          sample       20       928.407 ±   0.036    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·gc.churn.PS_Eden_Space                                      sample       20      1066.862 ±   9.425  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·gc.churn.PS_Eden_Space.norm                                 sample       20       925.979 ±   1.774    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·gc.churn.PS_Survivor_Space                                  sample       20         0.238 ±   0.031  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·gc.churn.PS_Survivor_Space.norm                             sample       20         0.206 ±   0.027    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·gc.count                                                    sample       20      3203.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·gc.time                                                     sample       20      1907.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithFdf:·stack                                                       sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda                                                             sample  5289166       691.826 ±   7.962   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:parseWithJoda·p0.00                                         sample                199.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:parseWithJoda·p0.50                                         sample                593.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:parseWithJoda·p0.90                                         sample                615.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:parseWithJoda·p0.95                                         sample                632.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:parseWithJoda·p0.99                                         sample                818.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:parseWithJoda·p0.999                                        sample              11040.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:parseWithJoda·p0.9999                                       sample             187392.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:parseWithJoda·p1.00                                         sample            1169408.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·compiler.time.profiled                                     sample       20      1468.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·compiler.time.total                                        sample       20      2202.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·gc.alloc.rate                                              sample       20       552.727 ±   3.285  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·gc.alloc.rate.norm                                         sample       20       360.292 ±   0.022    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·gc.churn.PS_Eden_Space                                     sample       20       551.618 ±   3.365  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·gc.churn.PS_Eden_Space.norm                                sample       20       359.569 ±   0.484    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·gc.churn.PS_Survivor_Space                                 sample       20         0.223 ±   0.028  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·gc.churn.PS_Survivor_Space.norm                            sample       20         0.145 ±   0.018    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·gc.count                                                   sample       20      3246.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·gc.time                                                    sample       20      1870.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJoda:·stack                                                      sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310                                                           sample  6911934       993.966 ±   7.886   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:parseWithJsr310·p0.00                                     sample                835.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:parseWithJsr310·p0.50                                     sample                886.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:parseWithJsr310·p0.90                                     sample                924.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:parseWithJsr310·p0.95                                     sample                954.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:parseWithJsr310·p0.99                                     sample               1234.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:parseWithJsr310·p0.999                                    sample              11456.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:parseWithJsr310·p0.9999                                   sample             212480.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:parseWithJsr310·p1.00                                     sample            6430720.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·compiler.time.profiled                                   sample       20      1457.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·compiler.time.total                                      sample       20      3175.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·gc.alloc.rate                                            sample       20       946.568 ±   8.650  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·gc.alloc.rate.norm                                       sample       20       944.430 ±   0.041    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·gc.churn.PS_Eden_Space                                   sample       20       944.718 ±   8.939  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·gc.churn.PS_Eden_Space.norm                              sample       20       942.582 ±   1.624    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·gc.churn.PS_Survivor_Space                               sample       20         0.218 ±   0.029  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·gc.churn.PS_Survivor_Space.norm                          sample       20         0.218 ±   0.028    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·gc.count                                                 sample       20      3208.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·gc.time                                                  sample       20      1901.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithJsr310:·stack                                                    sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf                                                              sample  6674898      1988.078 ±  10.135   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:parseWithSdf·p0.00                                           sample               1710.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:parseWithSdf·p0.50                                           sample               1788.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:parseWithSdf·p0.90                                           sample               1870.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:parseWithSdf·p0.95                                           sample               1938.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:parseWithSdf·p0.99                                           sample               2744.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:parseWithSdf·p0.999                                          sample              14128.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:parseWithSdf·p0.9999                                         sample             251778.586             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:parseWithSdf·p1.00                                           sample            1529856.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·compiler.time.profiled                                      sample       20      1589.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·compiler.time.total                                         sample       20      2788.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·gc.alloc.rate                                               sample       20      1386.683 ±   7.639  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·gc.alloc.rate.norm                                          sample       20      2864.864 ±   0.082    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·gc.churn.PS_Eden_Space                                      sample       20      1383.397 ±   7.756  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·gc.churn.PS_Eden_Space.norm                                 sample       20      2858.078 ±   5.025    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·gc.churn.PS_Survivor_Space                                  sample       20         0.237 ±   0.025  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·gc.churn.PS_Survivor_Space.norm                             sample       20         0.490 ±   0.053    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·gc.count                                                    sample       20      3225.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·gc.time                                                     sample       20      1925.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.parseWithSdf:·stack                                                       sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf                                                                  sample  7119619       512.307 ±   5.734   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:printFdf·p0.00                                                   sample                265.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:printFdf·p0.50                                                   sample                443.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:printFdf·p0.90                                                   sample                470.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:printFdf·p0.95                                                   sample                492.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:printFdf·p0.99                                                   sample                671.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:printFdf·p0.999                                                  sample               9520.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:printFdf·p0.9999                                                 sample             192265.728             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:printFdf·p1.00                                                   sample            1568768.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·compiler.time.profiled                                          sample       20      1589.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·compiler.time.total                                             sample       20      2498.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·gc.alloc.rate                                                   sample       20      1470.188 ±   6.460  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·gc.alloc.rate.norm                                              sample       20       712.215 ±   0.021    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·gc.churn.PS_Eden_Space                                          sample       20      1466.674 ±   6.633  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·gc.churn.PS_Eden_Space.norm                                     sample       20       710.514 ±   1.180    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·gc.churn.PS_Survivor_Space                                      sample       20         0.227 ±   0.022  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·gc.churn.PS_Survivor_Space.norm                                 sample       20         0.110 ±   0.011    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·gc.count                                                        sample       20      3211.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·gc.time                                                         sample       20      1910.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printFdf:·stack                                                           sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda                                                                 sample  6017684       333.794 ±   5.751   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:printJoda·p0.00                                                 sample                124.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:printJoda·p0.50                                                 sample                274.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:printJoda·p0.90                                                 sample                299.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:printJoda·p0.95                                                 sample                310.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:printJoda·p0.99                                                 sample                440.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:printJoda·p0.999                                                sample               9616.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:printJoda·p0.9999                                               sample             163840.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:printJoda·p1.00                                                 sample            2437120.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·compiler.time.profiled                                         sample       20      1646.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·compiler.time.total                                            sample       20      2616.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·gc.alloc.rate                                                  sample       20       670.203 ±   7.662  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·gc.alloc.rate.norm                                             sample       20       192.128 ±   0.020    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·gc.churn.PS_Eden_Space                                         sample       20       667.714 ±   8.143  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·gc.churn.PS_Eden_Space.norm                                    sample       20       191.413 ±   0.399    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·gc.churn.PS_Survivor_Space                                     sample       20         0.185 ±   0.023  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·gc.churn.PS_Survivor_Space.norm                                sample       20         0.053 ±   0.006    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·gc.count                                                       sample       20      2849.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·gc.time                                                        sample       20      1759.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJoda:·stack                                                          sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310                                                               sample  6720574       557.994 ±   6.640   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:printJsr310·p0.00                                             sample                348.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:printJsr310·p0.50                                             sample                448.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:printJsr310·p0.90                                             sample                522.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:printJsr310·p0.95                                             sample                656.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:printJsr310·p0.99                                             sample               1180.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:printJsr310·p0.999                                            sample              12592.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:printJsr310·p0.9999                                           sample             174592.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:printJsr310·p1.00                                             sample            2387968.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·compiler.time.profiled                                       sample       20      1908.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·compiler.time.total                                          sample       20      3068.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·gc.alloc.rate                                                sample       20      1092.571 ±   6.518  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·gc.alloc.rate.norm                                           sample       20       560.266 ±   0.106    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·gc.churn.PS_Eden_Space                                       sample       20      1088.039 ±   6.471  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·gc.churn.PS_Eden_Space.norm                                  sample       20       557.945 ±   1.456    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·gc.churn.PS_Survivor_Space                                   sample       20         0.177 ±   0.016  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·gc.churn.PS_Survivor_Space.norm                              sample       20         0.091 ±   0.008    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·gc.count                                                     sample       20      2318.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·gc.time                                                      sample       20      1653.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printJsr310:·stack                                                        sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf                                                                  sample  4152779      1698.569 ±  16.011   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:printSdf·p0.00                                                   sample               1196.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:printSdf·p0.50                                                   sample               1288.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:printSdf·p0.90                                                   sample               1932.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:printSdf·p0.95                                                   sample               2468.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:printSdf·p0.99                                                   sample               3800.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:printSdf·p0.999                                                  sample              34368.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:printSdf·p0.9999                                                 sample             395491.328             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:printSdf·p1.00                                                   sample            2074624.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·compiler.time.profiled                                          sample       20      1669.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·compiler.time.total                                             sample       20      3399.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·gc.alloc.rate                                                   sample       20      1388.649 ±   4.563  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·gc.alloc.rate.norm                                              sample       20      2304.762 ±   0.049    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·gc.churn.PS_Eden_Space                                          sample       20      1383.637 ±   5.609  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·gc.churn.PS_Eden_Space.norm                                     sample       20      2296.445 ±   5.965    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·gc.churn.PS_Survivor_Space                                      sample       20         0.180 ±   0.017  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·gc.churn.PS_Survivor_Space.norm                                 sample       20         0.299 ±   0.029    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·gc.count                                                        sample       20      2288.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·gc.time                                                         sample       20      1673.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPattern.printSdf:·stack                                                           sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf                                      sample  4827024       773.712 ±  10.204   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:parseWithFdf·p0.00                   sample                423.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:parseWithFdf·p0.50                   sample                598.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:parseWithFdf·p0.90                   sample                735.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:parseWithFdf·p0.95                   sample                927.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:parseWithFdf·p0.99                   sample               1608.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:parseWithFdf·p0.999                  sample              16192.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:parseWithFdf·p0.9999                 sample             198296.320             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:parseWithFdf·p1.00                   sample            2408448.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·compiler.time.profiled              sample       20      1610.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·compiler.time.total                 sample       20      2701.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·gc.alloc.rate                       sample       20      1098.277 ±   4.687  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·gc.alloc.rate.norm                  sample       20       784.322 ±   0.020    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·gc.churn.PS_Eden_Space              sample       20      1093.439 ±   6.310  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·gc.churn.PS_Eden_Space.norm         sample       20       780.863 ±   2.275    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·gc.churn.PS_Survivor_Space          sample       20         0.176 ±   0.021  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·gc.churn.PS_Survivor_Space.norm     sample       20         0.125 ±   0.015    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·gc.count                            sample       20      2200.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·gc.time                             sample       20      1641.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithFdf:·stack                               sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda                                     sample  5383014       383.877 ±   7.073   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:parseWithJoda·p0.00                 sample                 17.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:parseWithJoda·p0.50                 sample                302.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:parseWithJoda·p0.90                 sample                339.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:parseWithJoda·p0.95                 sample                367.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:parseWithJoda·p0.99                 sample                660.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:parseWithJoda·p0.999                sample              11904.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:parseWithJoda·p0.9999               sample             168370.816             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:parseWithJoda·p1.00                 sample            2289664.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·compiler.time.profiled             sample       20      1599.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·compiler.time.total                sample       20      2562.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·gc.alloc.rate                      sample       20       824.593 ±   8.673  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·gc.alloc.rate.norm                 sample       20       264.139 ±   0.008    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·gc.churn.PS_Eden_Space             sample       20       821.032 ±   9.205  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·gc.churn.PS_Eden_Space.norm        sample       20       262.997 ±   0.738    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·gc.churn.PS_Survivor_Space         sample       20         0.160 ±   0.016  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·gc.churn.PS_Survivor_Space.norm    sample       20         0.051 ±   0.005    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·gc.count                           sample       20      2298.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·gc.time                            sample       20      1627.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJoda:·stack                              sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310                                   sample  7268530       953.453 ±   7.646   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:parseWithJsr310·p0.00             sample                592.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:parseWithJsr310·p0.50             sample                799.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:parseWithJsr310·p0.90             sample                935.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:parseWithJsr310·p0.95             sample               1140.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:parseWithJsr310·p0.99             sample               1800.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:parseWithJsr310·p0.999            sample              15168.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:parseWithJsr310·p0.9999           sample             191744.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:parseWithJsr310·p1.00             sample            2191360.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·compiler.time.profiled           sample       20      1564.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·compiler.time.total              sample       20      3234.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·gc.alloc.rate                    sample       20       818.541 ±   8.859  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·gc.alloc.rate.norm               sample       20       776.438 ±   0.035    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·gc.churn.PS_Eden_Space           sample       20       815.658 ±   8.497  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·gc.churn.PS_Eden_Space.norm      sample       20       773.711 ±   2.108    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·gc.churn.PS_Survivor_Space       sample       20         0.165 ±   0.014  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·gc.churn.PS_Survivor_Space.norm  sample       20         0.157 ±   0.014    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·gc.count                         sample       20      2307.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·gc.time                          sample       20      1637.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithJsr310:·stack                            sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf                                      sample  4143739      1717.534 ±  16.888   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:parseWithSdf·p0.00                   sample               1192.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:parseWithSdf·p0.50                   sample               1320.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:parseWithSdf·p0.90                   sample               1886.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:parseWithSdf·p0.95                   sample               2396.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:parseWithSdf·p0.99                   sample               3720.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:parseWithSdf·p0.999                  sample              36496.640             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:parseWithSdf·p0.9999                 sample             435137.536             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:parseWithSdf·p1.00                   sample            2211840.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·compiler.time.profiled              sample       20      1525.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·compiler.time.total                 sample       20      3129.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·gc.alloc.rate                       sample       20      1318.155 ±  20.003  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·gc.alloc.rate.norm                  sample       20      2192.744 ±   0.047    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·gc.churn.PS_Eden_Space              sample       20      1311.347 ±  20.053  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·gc.churn.PS_Eden_Space.norm         sample       20      2181.426 ±   6.276    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·gc.churn.PS_Survivor_Space          sample       20         0.188 ±   0.013  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·gc.churn.PS_Survivor_Space.norm     sample       20         0.312 ±   0.023    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·gc.count                            sample       20      2293.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·gc.time                             sample       20      1675.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.parseWithSdf:·stack                               sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf                                          sample  6697974       551.292 ±   6.675   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:printFdf·p0.00                           sample                123.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:printFdf·p0.50                           sample                429.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:printFdf·p0.90                           sample                558.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:printFdf·p0.95                           sample                740.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:printFdf·p0.99                           sample               1350.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:printFdf·p0.999                          sample              12576.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:printFdf·p0.9999                         sample             176947.840             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:printFdf·p1.00                           sample            2396160.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·compiler.time.profiled                  sample       20      1724.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·compiler.time.total                     sample       20      2705.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·gc.alloc.rate                           sample       20      1353.283 ±   5.956  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·gc.alloc.rate.norm                      sample       20       696.239 ±   0.019    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·gc.churn.PS_Eden_Space                  sample       20      1348.897 ±   8.231  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·gc.churn.PS_Eden_Space.norm             sample       20       693.977 ±   1.776    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·gc.churn.PS_Survivor_Space              sample       20         0.170 ±   0.017  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·gc.churn.PS_Survivor_Space.norm         sample       20         0.087 ±   0.009    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·gc.count                                sample       20      2280.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·gc.time                                 sample       20      1671.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printFdf:·stack                                   sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda                                         sample  4743318       244.574 ±   6.050   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:printJoda·p0.00                         sample                 40.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:printJoda·p0.50                         sample                182.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:printJoda·p0.90                         sample                205.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:printJoda·p0.95                         sample                237.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:printJoda·p0.99                         sample                528.810             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:printJoda·p0.999                        sample              10640.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:printJoda·p0.9999                       sample             147115.034             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:printJoda·p1.00                         sample            2416640.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·compiler.time.profiled                 sample       20      1679.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·compiler.time.total                    sample       20      2582.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·gc.alloc.rate                          sample       20      1144.933 ±   6.845  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·gc.alloc.rate.norm                     sample       20       208.079 ±   0.004    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·gc.churn.PS_Eden_Space                 sample       20      1141.872 ±   8.233  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·gc.churn.PS_Eden_Space.norm            sample       20       207.521 ±   0.381    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·gc.churn.PS_Survivor_Space             sample       20         0.154 ±   0.015  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·gc.churn.PS_Survivor_Space.norm        sample       20         0.028 ±   0.003    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·gc.count                               sample       20      2286.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·gc.time                                sample       20      1672.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJoda:·stack                                  sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310                                       sample  5598104       359.418 ±   6.338   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:printJsr310·p0.00                     sample                 22.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:printJsr310·p0.50                     sample                278.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:printJsr310·p0.90                     sample                315.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:printJsr310·p0.95                     sample                376.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:printJsr310·p0.99                     sample                800.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:printJsr310·p0.999                    sample              11344.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:printJsr310·p0.9999                   sample             162304.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:printJsr310·p1.00                     sample            2191360.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·compiler.time.profiled               sample       20      1684.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·compiler.time.total                  sample       20      2521.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·gc.alloc.rate                        sample       20      1169.813 ±   8.020  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·gc.alloc.rate.norm                   sample       20       360.151 ±   0.042    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·gc.churn.PS_Eden_Space               sample       20      1165.558 ±   8.355  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·gc.churn.PS_Eden_Space.norm          sample       20       358.842 ±   0.987    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·gc.churn.PS_Survivor_Space           sample       20         0.170 ±   0.017  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·gc.churn.PS_Survivor_Space.norm      sample       20         0.052 ±   0.005    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·gc.count                             sample       20      2286.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·gc.time                              sample       20      1649.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printJsr310:·stack                                sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf                                          sample  5036055      1390.507 ±  13.486   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:printSdf·p0.00                           sample                945.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:printSdf·p0.50                           sample               1034.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:printSdf·p0.90                           sample               1662.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:printSdf·p0.95                           sample               2180.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:printSdf·p0.99                           sample               3424.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:printSdf·p0.999                          sample              21888.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:printSdf·p0.9999                         sample             301459.866             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:printSdf·p1.00                           sample            2490368.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·compiler.time.profiled                  sample       20      1672.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·compiler.time.total                     sample       20      3523.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·gc.alloc.rate                           sample       20      1573.606 ±   6.547  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·gc.alloc.rate.norm                      sample       20      2152.638 ±   0.042    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·gc.churn.PS_Eden_Space                  sample       20      1568.755 ±   7.108  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·gc.churn.PS_Eden_Space.norm             sample       20      2146.004 ±   4.896    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·gc.churn.PS_Survivor_Space              sample       20         0.186 ±   0.021  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·gc.churn.PS_Survivor_Space.norm         sample       20         0.254 ±   0.028    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·gc.count                                sample       20      2247.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·gc.time                                 sample       20      1671.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.printSdf:·stack                                   sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse                                   sample  5421213       692.969 ±   8.095   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:withManualParse·p0.00             sample                191.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:withManualParse·p0.50             sample                559.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:withManualParse·p0.90             sample                652.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:withManualParse·p0.95             sample                803.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:withManualParse·p0.99             sample               1406.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:withManualParse·p0.999            sample              15200.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:withManualParse·p0.9999           sample             192736.922             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:withManualParse·p1.00             sample            2048000.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·compiler.time.profiled           sample       20      1447.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·compiler.time.total              sample       20      3091.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·gc.alloc.rate                    sample       20       958.722 ±  41.043  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·gc.alloc.rate.norm               sample       20       609.481 ±   4.647    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·gc.churn.PS_Eden_Space           sample       20       955.416 ±  41.023  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·gc.churn.PS_Eden_Space.norm      sample       20       607.371 ±   4.148    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·gc.churn.PS_Survivor_Space       sample       20         0.158 ±   0.022  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·gc.churn.PS_Survivor_Space.norm  sample       20         0.101 ±   0.015    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·gc.count                         sample       20      2350.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·gc.time                          sample       20      1660.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkCustomPatternMillisFromDateGuavaCache.withManualParse:·stack                            sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310                                                       sample  5740675      1216.353 ±  10.299   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:parseInstantWithJsr310·p0.00                          sample                827.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:parseInstantWithJsr310·p0.50                          sample                923.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:parseInstantWithJsr310·p0.90                          sample               1420.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:parseInstantWithJsr310·p0.95                          sample               1902.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:parseInstantWithJsr310·p0.99                          sample               3076.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:parseInstantWithJsr310·p0.999                         sample              18912.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:parseInstantWithJsr310·p0.9999                        sample             217070.694             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:parseInstantWithJsr310·p1.00                          sample            2187264.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·compiler.time.profiled                               sample       20      1612.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·compiler.time.total                                  sample       20      3264.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·gc.alloc.rate                                        sample       20      1493.479 ±  16.177  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·gc.alloc.rate.norm                                   sample       20      1792.528 ±   0.031    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·gc.churn.PS_Eden_Space                               sample       20      1488.966 ±  17.808  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·gc.churn.PS_Eden_Space.norm                          sample       20      1787.088 ±   4.049    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·gc.churn.PS_Survivor_Space                           sample       20         0.163 ±   0.014  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·gc.churn.PS_Survivor_Space.norm                      sample       20         0.196 ±   0.016    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·gc.count                                             sample       20      2276.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·gc.time                                              sample       20      1679.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseInstantWithJsr310:·stack                                                sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached                                                  sample  7382970       270.216 ±   2.042   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:parseWithCustomParserCached·p0.00                sample                161.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:parseWithCustomParserCached·p0.50                sample                237.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:parseWithCustomParserCached·p0.90                sample                261.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:parseWithCustomParserCached·p0.95                sample                271.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:parseWithCustomParserCached·p0.99                sample                350.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:parseWithCustomParserCached·p0.999               sample               9072.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:parseWithCustomParserCached·p0.9999              sample              51443.942             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:parseWithCustomParserCached·p1.00                sample             862208.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:·compiler.time.profiled                          sample       20       763.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:·compiler.time.total                             sample       20      1548.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:·gc.alloc.rate                                   sample       20         0.409 ±   0.106  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:·gc.alloc.rate.norm                              sample       20         0.095 ±   0.024    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:·gc.count                                        sample       20           ≈ 0            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserCached:·stack                                           sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso                                                     sample  7176568       518.011 ±   6.039   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:parseWithCustomParserIso·p0.00                      sample                169.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:parseWithCustomParserIso·p0.50                      sample                410.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:parseWithCustomParserIso·p0.90                      sample                504.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:parseWithCustomParserIso·p0.95                      sample                655.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:parseWithCustomParserIso·p0.99                      sample               1210.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:parseWithCustomParserIso·p0.999                     sample              12016.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:parseWithCustomParserIso·p0.9999                    sample             170240.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:parseWithCustomParserIso·p1.00                      sample            2195456.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·compiler.time.profiled                             sample       20      1586.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·compiler.time.total                                sample       20      2528.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·gc.alloc.rate                                      sample       20      1233.472 ±   4.684  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·gc.alloc.rate.norm                                 sample       20       592.206 ±   0.011    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·gc.churn.PS_Eden_Space                             sample       20      1229.351 ±   6.122  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·gc.churn.PS_Eden_Space.norm                        sample       20       590.226 ±   1.378    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·gc.churn.PS_Survivor_Space                         sample       20         0.165 ±   0.014  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·gc.churn.PS_Survivor_Space.norm                    sample       20         0.079 ±   0.007    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·gc.count                                           sample       20      2214.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·gc.time                                            sample       20      1658.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserIso:·stack                                              sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8                                                   sample  5188813       222.351 ±   5.153   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:parseWithCustomParserJava8·p0.00                  sample                 41.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:parseWithCustomParserJava8·p0.50                  sample                159.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:parseWithCustomParserJava8·p0.90                  sample                191.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:parseWithCustomParserJava8·p0.95                  sample                260.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:parseWithCustomParserJava8·p0.99                  sample                678.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:parseWithCustomParserJava8·p0.999                 sample               9616.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:parseWithCustomParserJava8·p0.9999                sample             136990.362             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:parseWithCustomParserJava8·p1.00                  sample            2572288.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·compiler.time.profiled                           sample       20      1664.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·compiler.time.total                              sample       20      2521.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·gc.alloc.rate                                    sample       20      1686.864 ±  10.321  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·gc.alloc.rate.norm                               sample       20       280.072 ±   0.004    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·gc.churn.PS_Eden_Space                           sample       20      1680.452 ±  10.801  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·gc.churn.PS_Eden_Space.norm                      sample       20       279.007 ±   0.572    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·gc.churn.PS_Survivor_Space                       sample       20         0.170 ±   0.013  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·gc.churn.PS_Survivor_Space.norm                  sample       20         0.028 ±   0.002    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·gc.count                                         sample       20      2315.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·gc.time                                          sample       20      1712.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8:·stack                                            sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt                                                sample  5322805       141.940 ±   3.422   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:parseWithCustomParserJava8Opt·p0.00            sample                  9.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:parseWithCustomParserJava8Opt·p0.50            sample                109.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:parseWithCustomParserJava8Opt·p0.90            sample                123.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:parseWithCustomParserJava8Opt·p0.95            sample                136.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:parseWithCustomParserJava8Opt·p0.99            sample                244.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:parseWithCustomParserJava8Opt·p0.999           sample               3560.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:parseWithCustomParserJava8Opt·p0.9999          sample              37184.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:parseWithCustomParserJava8Opt·p1.00            sample            1368064.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·compiler.time.profiled                        sample       20      1655.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·compiler.time.total                           sample       20      2248.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·gc.alloc.rate                                 sample       20       888.988 ±   9.450  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·gc.alloc.rate.norm                            sample       20        72.035 ±   0.002    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·gc.churn.PS_Eden_Space                        sample       20       885.505 ±   9.414  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·gc.churn.PS_Eden_Space.norm                   sample       20        71.753 ±   0.162    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·gc.churn.PS_Survivor_Space                    sample       20         0.153 ±   0.015  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·gc.churn.PS_Survivor_Space.norm               sample       20         0.012 ±   0.001    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·gc.count                                      sample       20      2267.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·gc.time                                       sample       20      1620.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithCustomParserJava8Opt:·stack                                         sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf                                                                 sample  7609378       904.536 ±   6.991   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:parseWithFdf·p0.00                                              sample                661.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:parseWithFdf·p0.50                                              sample                757.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:parseWithFdf·p0.90                                              sample                896.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:parseWithFdf·p0.95                                              sample               1108.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:parseWithFdf·p0.99                                              sample               1740.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:parseWithFdf·p0.999                                             sample              14448.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:parseWithFdf·p0.9999                                            sample             185088.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:parseWithFdf·p1.00                                              sample            2117632.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·compiler.time.profiled                                         sample       20      1675.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·compiler.time.total                                            sample       20      2506.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·gc.alloc.rate                                                  sample       20       980.823 ±   5.035  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·gc.alloc.rate.norm                                             sample       20       888.395 ±   0.021    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·gc.churn.PS_Eden_Space                                         sample       20       977.380 ±   5.510  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·gc.churn.PS_Eden_Space.norm                                    sample       20       885.277 ±   2.033    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·gc.churn.PS_Survivor_Space                                     sample       20         0.178 ±   0.023  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·gc.churn.PS_Survivor_Space.norm                                sample       20         0.161 ±   0.021    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·gc.count                                                       sample       20      2249.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·gc.time                                                        sample       20      1644.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithFdf:·stack                                                          sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda                                                                sample  4038063       928.686 ±  12.096   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:parseWithJoda·p0.00                                            sample                518.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:parseWithJoda·p0.50                                            sample                745.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:parseWithJoda·p0.90                                            sample                830.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:parseWithJoda·p0.95                                            sample                893.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:parseWithJoda·p0.99                                            sample               1402.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:parseWithJoda·p0.999                                           sample              17853.952             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:parseWithJoda·p0.9999                                          sample             203776.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:parseWithJoda·p1.00                                            sample            1964032.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·compiler.time.profiled                                        sample       20      1512.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·compiler.time.total                                           sample       20      2139.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·gc.alloc.rate                                                 sample       20       449.635 ±   3.810  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·gc.alloc.rate.norm                                            sample       20       384.369 ±   0.018    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·gc.churn.PS_Eden_Space                                        sample       20       448.364 ±   3.946  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·gc.churn.PS_Eden_Space.norm                                   sample       20       383.283 ±   0.826    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·gc.churn.PS_Survivor_Space                                    sample       20         0.171 ±   0.018  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·gc.churn.PS_Survivor_Space.norm                               sample       20         0.146 ±   0.016    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·gc.count                                                      sample       20      2328.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·gc.time                                                       sample       20      1616.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJoda:·stack                                                         sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310                                                              sample  7317126       950.585 ±   7.399   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:parseWithJsr310·p0.00                                        sample                500.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:parseWithJsr310·p0.50                                        sample                768.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:parseWithJsr310·p0.90                                        sample               1012.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:parseWithJsr310·p0.95                                        sample               1324.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:parseWithJsr310·p0.99                                        sample               2168.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:parseWithJsr310·p0.999                                       sample              15472.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:parseWithJsr310·p0.9999                                      sample             192329.549             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:parseWithJsr310·p1.00                                        sample            2183168.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·compiler.time.profiled                                      sample       20      1521.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·compiler.time.total                                         sample       20      3174.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·gc.alloc.rate                                               sample       20      1189.493 ±  22.864  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·gc.alloc.rate.norm                                          sample       20      1120.429 ±   0.031    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·gc.churn.PS_Eden_Space                                      sample       20      1185.637 ±  21.620  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·gc.churn.PS_Eden_Space.norm                                 sample       20      1116.829 ±   3.168    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·gc.churn.PS_Survivor_Space                                  sample       20         0.161 ±   0.016  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·gc.churn.PS_Survivor_Space.norm                             sample       20         0.152 ±   0.016    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·gc.count                                                    sample       20      2299.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·gc.time                                                     sample       20      1685.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithJsr310:·stack                                                       sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf                                                                 sample  4855294      1448.076 ±  13.226   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:parseWithSdf·p0.00                                              sample                915.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:parseWithSdf·p0.50                                              sample               1216.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:parseWithSdf·p0.90                                              sample               1370.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:parseWithSdf·p0.95                                              sample               1476.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:parseWithSdf·p0.99                                              sample               2216.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:parseWithSdf·p0.999                                             sample              20928.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:parseWithSdf·p0.9999                                            sample             256512.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:parseWithSdf·p1.00                                              sample            2138112.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·compiler.time.profiled                                         sample       20      1546.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·compiler.time.total                                            sample       20      2262.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·gc.alloc.rate                                                  sample       20       653.395 ±  12.446  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·gc.alloc.rate.norm                                             sample       20       928.591 ±   0.031    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·gc.churn.PS_Eden_Space                                         sample       20       650.691 ±  12.008  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·gc.churn.PS_Eden_Space.norm                                    sample       20       924.766 ±   2.458    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·gc.churn.PS_Survivor_Space                                     sample       20         0.150 ±   0.016  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·gc.churn.PS_Survivor_Space.norm                                sample       20         0.213 ±   0.024    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·gc.count                                                       sample       20      2240.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·gc.time                                                        sample       20      1624.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.parseWithSdf:·stack                                                          sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf                                                                     sample  6430285       574.713 ±   6.540   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:printFdf·p0.00                                                      sample                353.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:printFdf·p0.50                                                      sample                457.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:printFdf·p0.90                                                      sample                560.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:printFdf·p0.95                                                      sample                721.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:printFdf·p0.99                                                      sample               1298.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:printFdf·p0.999                                                     sample              12800.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:printFdf·p0.9999                                                    sample             175104.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:printFdf·p1.00                                                      sample            2072576.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·compiler.time.profiled                                             sample       20      1629.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·compiler.time.total                                                sample       20      2554.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·gc.alloc.rate                                                      sample       20      1224.895 ±   7.968  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·gc.alloc.rate.norm                                                 sample       20       656.241 ±   0.020    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·gc.churn.PS_Eden_Space                                             sample       20      1218.734 ±   8.702  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·gc.churn.PS_Eden_Space.norm                                        sample       20       652.940 ±   1.949    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·gc.churn.PS_Survivor_Space                                         sample       20         0.174 ±   0.022  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·gc.churn.PS_Survivor_Space.norm                                    sample       20         0.093 ±   0.012    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·gc.count                                                           sample       20      2294.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·gc.time                                                            sample       20      1681.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printFdf:·stack                                                              sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda                                                                    sample  7452557       496.200 ±   5.342   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:printJoda·p0.00                                                    sample                129.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:printJoda·p0.50                                                    sample                420.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:printJoda·p0.90                                                    sample                467.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:printJoda·p0.95                                                    sample                497.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:printJoda·p0.99                                                    sample                769.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:printJoda·p0.999                                                   sample              11367.072             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:printJoda·p0.9999                                                  sample             163328.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:printJoda·p1.00                                                    sample            2000896.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·compiler.time.profiled                                            sample       20      1499.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·compiler.time.total                                               sample       20      2610.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·gc.alloc.rate                                                     sample       20       622.603 ±   7.764  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·gc.alloc.rate.norm                                                sample       20       288.193 ±   7.123    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·gc.churn.PS_Eden_Space                                            sample       20       620.243 ±   7.715  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·gc.churn.PS_Eden_Space.norm                                       sample       20       287.100 ±   7.050    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·gc.churn.PS_Survivor_Space                                        sample       20         0.160 ±   0.011  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·gc.churn.PS_Survivor_Space.norm                                   sample       20         0.074 ±   0.005    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·gc.count                                                          sample       20      2222.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·gc.time                                                           sample       20      1596.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJoda:·stack                                                             sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310                                                                  sample  5389568       684.609 ±   8.599   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:printJsr310·p0.00                                                sample                175.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:printJsr310·p0.50                                                sample                529.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:printJsr310·p0.90                                                sample                681.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:printJsr310·p0.95                                                sample                892.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:printJsr310·p0.99                                                sample               1570.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:printJsr310·p0.999                                               sample              14688.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:printJsr310·p0.9999                                              sample             188928.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:printJsr310·p1.00                                                sample            2256896.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·compiler.time.profiled                                          sample       20      1701.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·compiler.time.total                                             sample       20      2931.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·gc.alloc.rate                                                   sample       20      1357.527 ±   6.876  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·gc.alloc.rate.norm                                              sample       20       868.296 ±  17.823    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·gc.churn.PS_Eden_Space                                          sample       20      1352.748 ±   8.262  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·gc.churn.PS_Eden_Space.norm                                     sample       20       865.227 ±  17.556    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·gc.churn.PS_Survivor_Space                                      sample       20         0.160 ±   0.018  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·gc.churn.PS_Survivor_Space.norm                                 sample       20         0.102 ±   0.012    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·gc.count                                                        sample       20      2224.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·gc.time                                                         sample       20      1674.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printJsr310:·stack                                                           sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf                                                                     sample  5558150       668.002 ±   9.137   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:printSdf·p0.00                                                      sample                378.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:printSdf·p0.50                                                      sample                514.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:printSdf·p0.90                                                      sample                659.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:printSdf·p0.95                                                      sample                853.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:printSdf·p0.99                                                      sample               1504.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:printSdf·p0.999                                                     sample              14592.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:printSdf·p0.9999                                                    sample             189952.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:printSdf·p1.00                                                      sample            5251072.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·compiler.time.profiled                                             sample       20      1639.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·compiler.time.total                                                sample       20      2866.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·gc.alloc.rate                                                      sample       20      1213.262 ±   7.411  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·gc.alloc.rate.norm                                                 sample       20       752.271 ±   0.023    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·gc.churn.PS_Eden_Space                                             sample       20      1208.124 ±   8.063  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·gc.churn.PS_Eden_Space.norm                                        sample       20       749.086 ±   2.121    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·gc.churn.PS_Survivor_Space                                         sample       20         0.170 ±   0.021  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·gc.churn.PS_Survivor_Space.norm                                    sample       20         0.106 ±   0.013    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·gc.count                                                           sample       20      2220.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·gc.time                                                            sample       20      1675.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printSdf:·stack                                                              sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso                                                    sample  6839375       302.256 ±   4.629   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:printWithCustomPrinterIso·p0.00                    sample                  9.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:printWithCustomPrinterIso·p0.50                    sample                230.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:printWithCustomPrinterIso·p0.90                    sample                282.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:printWithCustomPrinterIso·p0.95                    sample                388.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:printWithCustomPrinterIso·p0.99                    sample                873.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:printWithCustomPrinterIso·p0.999                   sample               9776.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:printWithCustomPrinterIso·p0.9999                  sample             139520.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:printWithCustomPrinterIso·p1.00                    sample            2004992.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·compiler.time.profiled                            sample       20      1535.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·compiler.time.total                               sample       20      2282.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·gc.alloc.rate                                     sample       20      1715.393 ±   6.545  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·gc.alloc.rate.norm                                sample       20       432.100 ±   0.018    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·gc.churn.PS_Eden_Space                            sample       20      1710.437 ±   7.063  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·gc.churn.PS_Eden_Space.norm                       sample       20       430.852 ±   0.900    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·gc.churn.PS_Survivor_Space                        sample       20         0.163 ±   0.013  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·gc.churn.PS_Survivor_Space.norm                   sample       20         0.041 ±   0.003    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·gc.count                                          sample       20      2224.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·gc.time                                           sample       20      1670.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIso:·stack                                             sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt                                                 sample  4904738       240.517 ±   5.694   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:printWithCustomPrinterIsoOpt·p0.00              sample                  2.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:printWithCustomPrinterIsoOpt·p0.50              sample                176.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:printWithCustomPrinterIsoOpt·p0.90              sample                203.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:printWithCustomPrinterIsoOpt·p0.95              sample                246.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:printWithCustomPrinterIsoOpt·p0.99              sample                604.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:printWithCustomPrinterIsoOpt·p0.999             sample              10624.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:printWithCustomPrinterIsoOpt·p0.9999            sample             150528.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:printWithCustomPrinterIsoOpt·p1.00              sample            2082816.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·compiler.time.profiled                         sample       20      1527.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·compiler.time.total                            sample       20      2404.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·gc.alloc.rate                                  sample       20      1366.204 ±  38.907  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·gc.alloc.rate.norm                             sample       20       240.072 ±   0.004    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·gc.churn.PS_Eden_Space                         sample       20      1361.787 ±  38.837  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·gc.churn.PS_Eden_Space.norm                    sample       20       239.296 ±   0.592    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·gc.churn.PS_Survivor_Space                     sample       20         0.154 ±   0.016  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·gc.churn.PS_Survivor_Space.norm                sample       20         0.027 ±   0.003    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·gc.count                                       sample       20      2201.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·gc.time                                        sample       20      1664.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkISO8601UTC.printWithCustomPrinterIsoOpt:·stack                                          sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf                                                                      sample  6669968       892.906 ±   8.163   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:parseWithFdf·p0.00                                                   sample                588.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:parseWithFdf·p0.50                                                   sample                732.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:parseWithFdf·p0.90                                                   sample                869.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:parseWithFdf·p0.95                                                   sample               1072.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:parseWithFdf·p0.99                                                   sample               1702.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:parseWithFdf·p0.999                                                  sample              15328.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:parseWithFdf·p0.9999                                                 sample             191488.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:parseWithFdf·p1.00                                                   sample            2363392.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·compiler.time.profiled                                              sample       20      1625.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·compiler.time.total                                                 sample       20      2547.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·gc.alloc.rate                                                       sample       20       957.779 ±   4.293  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·gc.alloc.rate.norm                                                  sample       20       840.388 ±   0.021    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·gc.churn.PS_Eden_Space                                              sample       20       953.857 ±   5.477  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·gc.churn.PS_Eden_Space.norm                                         sample       20       836.944 ±   2.389    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·gc.churn.PS_Survivor_Space                                          sample       20         0.175 ±   0.012  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·gc.churn.PS_Survivor_Space.norm                                     sample       20         0.153 ±   0.011    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·gc.count                                                            sample       20      2226.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·gc.time                                                             sample       20      1633.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithFdf:·stack                                                               sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda                                                                     sample  4894745       764.912 ±   9.707   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:parseWithJoda·p0.00                                                 sample                286.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:parseWithJoda·p0.50                                                 sample                625.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:parseWithJoda·p0.90                                                 sample                695.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:parseWithJoda·p0.95                                                 sample                741.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:parseWithJoda·p0.99                                                 sample               1134.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:parseWithJoda·p0.999                                                sample              15136.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:parseWithJoda·p0.9999                                               sample             190208.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:parseWithJoda·p1.00                                                 sample            2248704.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·compiler.time.profiled                                             sample       20      1495.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·compiler.time.total                                                sample       20      2163.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·gc.alloc.rate                                                      sample       20       443.029 ±   2.176  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·gc.alloc.rate.norm                                                 sample       20       312.305 ±   0.015    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·gc.churn.PS_Eden_Space                                             sample       20       441.731 ±   2.414  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·gc.churn.PS_Eden_Space.norm                                        sample       20       311.391 ±   0.637    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·gc.churn.PS_Survivor_Space                                         sample       20         0.174 ±   0.016  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·gc.churn.PS_Survivor_Space.norm                                    sample       20         0.123 ±   0.011    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·gc.count                                                           sample       20      2410.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·gc.time                                                            sample       20      1648.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJoda:·stack                                                              sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310                                                                   sample  7692490       900.792 ±   6.614   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:parseWithJsr310·p0.00                                             sample                561.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:parseWithJsr310·p0.50                                             sample                754.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:parseWithJsr310·p0.90                                             sample                899.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:parseWithJsr310·p0.95                                             sample               1118.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:parseWithJsr310·p0.99                                             sample               1790.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:parseWithJsr310·p0.999                                            sample              14608.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:parseWithJsr310·p0.9999                                           sample             188864.230             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:parseWithJsr310·p1.00                                             sample            2654208.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·compiler.time.profiled                                           sample       20      1582.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·compiler.time.total                                              sample       20      3461.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·gc.alloc.rate                                                    sample       20       920.119 ±   6.330  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·gc.alloc.rate.norm                                               sample       20       824.408 ±   0.028    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·gc.churn.PS_Eden_Space                                           sample       20       917.819 ±   6.175  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·gc.churn.PS_Eden_Space.norm                                      sample       20       822.350 ±   1.755    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·gc.churn.PS_Survivor_Space                                       sample       20         0.169 ±   0.018  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·gc.churn.PS_Survivor_Space.norm                                  sample       20         0.152 ±   0.017    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·gc.count                                                         sample       20      2230.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·gc.time                                                          sample       20      1639.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithJsr310:·stack                                                            sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf                                                                      sample  5507848      1267.214 ±  10.933   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:parseWithSdf·p0.00                                                   sample                894.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:parseWithSdf·p0.50                                                   sample               1070.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:parseWithSdf·p0.90                                                   sample               1194.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:parseWithSdf·p0.95                                                   sample               1316.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:parseWithSdf·p0.99                                                   sample               2000.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:parseWithSdf·p0.999                                                  sample              17600.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:parseWithSdf·p0.9999                                                 sample             207726.131             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:parseWithSdf·p1.00                                                   sample            2183168.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·compiler.time.profiled                                              sample       20      1431.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·compiler.time.total                                                 sample       20      2365.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·gc.alloc.rate                                                       sample       20       664.619 ±   5.195  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·gc.alloc.rate.norm                                                  sample       20       832.527 ±   0.026    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·gc.churn.PS_Eden_Space                                              sample       20       662.341 ±   5.547  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·gc.churn.PS_Eden_Space.norm                                         sample       20       829.671 ±   2.010    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·gc.churn.PS_Survivor_Space                                          sample       20         0.159 ±   0.015  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·gc.churn.PS_Survivor_Space.norm                                     sample       20         0.200 ±   0.019    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·gc.count                                                            sample       20      2294.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·gc.time                                                             sample       20      1638.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.parseWithSdf:·stack                                                               sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf                                                                          sample  6806061       545.609 ±   6.512   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:printFdf·p0.00                                                           sample                220.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:printFdf·p0.50                                                           sample                430.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:printFdf·p0.90                                                           sample                533.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:printFdf·p0.95                                                           sample                696.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:printFdf·p0.99                                                           sample               1280.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:printFdf·p0.999                                                          sample              12512.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:printFdf·p0.9999                                                         sample             173056.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:printFdf·p1.00                                                           sample            2091008.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·compiler.time.profiled                                                  sample       20      1679.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·compiler.time.total                                                     sample       20      2555.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·gc.alloc.rate                                                           sample       20      1264.513 ±   4.601  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·gc.alloc.rate.norm                                                      sample       20       640.233 ±   0.019    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·gc.churn.PS_Eden_Space                                                  sample       20      1259.293 ±   5.711  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·gc.churn.PS_Eden_Space.norm                                             sample       20       637.590 ±   1.738    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·gc.churn.PS_Survivor_Space                                              sample       20         0.172 ±   0.020  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·gc.churn.PS_Survivor_Space.norm                                         sample       20         0.087 ±   0.010    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·gc.count                                                                sample       20      2256.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·gc.time                                                                 sample       20      1686.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printFdf:·stack                                                                   sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda                                                                         sample  5697855       351.271 ±   4.959   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:printJoda·p0.00                                                         sample                 35.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:printJoda·p0.50                                                         sample                285.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:printJoda·p0.90                                                         sample                319.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:printJoda·p0.95                                                         sample                337.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:printJoda·p0.99                                                         sample                524.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:printJoda·p0.999                                                        sample              11184.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:printJoda·p0.9999                                                       sample             153910.886             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:printJoda·p1.00                                                         sample            2011136.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·compiler.time.profiled                                                 sample       20      1492.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·compiler.time.total                                                    sample       20      2233.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·gc.alloc.rate                                                          sample       20       634.491 ±  11.511  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·gc.alloc.rate.norm                                                     sample       20       192.131 ±   0.007    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·gc.churn.PS_Eden_Space                                                 sample       20       632.743 ±  11.634  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·gc.churn.PS_Eden_Space.norm                                            sample       20       191.601 ±   0.375    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·gc.churn.PS_Survivor_Space                                             sample       20         0.152 ±   0.020  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·gc.churn.PS_Survivor_Space.norm                                        sample       20         0.046 ±   0.006    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·gc.count                                                               sample       20      2261.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·gc.time                                                                sample       20      1596.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJoda:·stack                                                                  sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310                                                                       sample  4063128       502.126 ±   9.206   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:printJsr310·p0.00                                                     sample                178.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:printJsr310·p0.50                                                     sample                374.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:printJsr310·p0.90                                                     sample                433.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:printJsr310·p0.95                                                     sample                516.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:printJsr310·p0.99                                                     sample               1012.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:printJsr310·p0.999                                                    sample              14912.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:printJsr310·p0.9999                                                   sample             184320.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:printJsr310·p1.00                                                     sample            2045952.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·compiler.time.profiled                                               sample       20      1726.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·compiler.time.total                                                  sample       20      2633.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·gc.alloc.rate                                                        sample       20      1056.157 ±   9.850  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·gc.alloc.rate.norm                                                   sample       20       448.205 ±   0.054    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·gc.churn.PS_Eden_Space                                               sample       20      1052.755 ±  10.596  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·gc.churn.PS_Eden_Space.norm                                          sample       20       446.759 ±   1.155    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·gc.churn.PS_Survivor_Space                                           sample       20         0.174 ±   0.018  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·gc.churn.PS_Survivor_Space.norm                                      sample       20         0.074 ±   0.008    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·gc.count                                                             sample       20      2234.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·gc.time                                                              sample       20      1645.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printJsr310:·stack                                                                sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf                                                                          sample  5320693       504.853 ±  28.752   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:printSdf·p0.00                                                           sample                202.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:printSdf·p0.50                                                           sample                379.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:printSdf·p0.90                                                           sample                441.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:printSdf·p0.95                                                           sample                570.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:printSdf·p0.99                                                           sample               1108.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:printSdf·p0.999                                                          sample              11104.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:printSdf·p0.9999                                                         sample             191214.234             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:printSdf·p1.00                                                           sample           35323904.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·compiler.time.profiled                                                  sample       20      1572.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·compiler.time.total                                                     sample       20      2731.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·gc.alloc.rate                                                           sample       20      1760.877 ± 166.137  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·gc.alloc.rate.norm                                                      sample       20       744.194 ±   0.024    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·gc.churn.PS_Eden_Space                                                  sample       20      1755.140 ± 167.817  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·gc.churn.PS_Eden_Space.norm                                             sample       20       741.632 ±   1.697    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·gc.churn.PS_Survivor_Space                                              sample       20         0.187 ±   0.023  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·gc.churn.PS_Survivor_Space.norm                                         sample       20         0.079 ±   0.007    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·gc.count                                                                sample       20      2828.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·gc.time                                                                 sample       20      1838.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printSdf:·stack                                                                   sample                    NaN               ---
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal                                                       sample  6274092       321.453 ±   5.329   ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:printWithCustomPrinterLocal·p0.00                     sample                216.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:printWithCustomPrinterLocal·p0.50                     sample                274.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:printWithCustomPrinterLocal·p0.90                     sample                288.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:printWithCustomPrinterLocal·p0.95                     sample                302.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:printWithCustomPrinterLocal·p0.99                     sample                404.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:printWithCustomPrinterLocal·p0.999                    sample               4012.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:printWithCustomPrinterLocal·p0.9999                   sample             165783.219             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:printWithCustomPrinterLocal·p1.00                     sample            1927168.000             ns/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·compiler.time.profiled                               sample       20      1499.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·compiler.time.total                                  sample       20      3670.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·gc.alloc.rate                                        sample       20      1703.738 ±  78.832  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·gc.alloc.rate.norm                                   sample       20       468.107 ±  10.684    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·gc.churn.PS_Eden_Space                               sample       20      1698.676 ±  77.412  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·gc.churn.PS_Eden_Space.norm                          sample       20       466.726 ±  10.327    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·gc.churn.PS_Survivor_Space                           sample       20         0.207 ±   0.023  MB/sec
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·gc.churn.PS_Survivor_Space.norm                      sample       20         0.057 ±   0.006    B/op
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·gc.count                                             sample       20      3102.000            counts
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·gc.time                                              sample       20      1905.000                ms
+DateBenchmarksSingleIteration.DatePrintParseBenchmarkLocal.printWithCustomPrinterLocal:·stack                                                sample                    NaN               ---

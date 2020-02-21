@@ -1,0 +1,4 @@
+Benchmark                            Mode  Cnt        Score   Error  Units
+CharBenchmarks.usingCharComparision  avgt       5580848.475          ns/op
+CharBenchmarks.usingCharIsDigit      avgt       6429309.531          ns/op
+CharBenchmarks.usingSwitch           avgt       5281363.076          ns/op

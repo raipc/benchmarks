@@ -1,0 +1,33 @@
+Benchmark                                             (arrayList)   (size)  Mode  Cnt        Score   Error   Units
+LinkedListIterationBenchmark.sum                             true        1  avgt    2        8.241           ns/op
+LinkedListIterationBenchmark.sum:·gc.alloc.rate              true        1  avgt    2        0.012          MB/sec
+LinkedListIterationBenchmark.sum:·gc.alloc.rate.norm         true        1  avgt    2       ≈ 10⁻⁴            B/op
+LinkedListIterationBenchmark.sum:·gc.count                   true        1  avgt    2          ≈ 0          counts
+LinkedListIterationBenchmark.sum                             true       10  avgt    2       17.777           ns/op
+LinkedListIterationBenchmark.sum:·gc.alloc.rate              true       10  avgt    2        0.001          MB/sec
+LinkedListIterationBenchmark.sum:·gc.alloc.rate.norm         true       10  avgt    2       ≈ 10⁻⁵            B/op
+LinkedListIterationBenchmark.sum:·gc.count                   true       10  avgt    2          ≈ 0          counts
+LinkedListIterationBenchmark.sum                             true     1000  avgt    2      818.561           ns/op
+LinkedListIterationBenchmark.sum:·gc.alloc.rate              true     1000  avgt    2       ≈ 10⁻⁴          MB/sec
+LinkedListIterationBenchmark.sum:·gc.alloc.rate.norm         true     1000  avgt    2       ≈ 10⁻⁴            B/op
+LinkedListIterationBenchmark.sum:·gc.count                   true     1000  avgt    2          ≈ 0          counts
+LinkedListIterationBenchmark.sum                             true  1000000  avgt    2  1285672.090           ns/op
+LinkedListIterationBenchmark.sum:·gc.alloc.rate              true  1000000  avgt    2        0.023          MB/sec
+LinkedListIterationBenchmark.sum:·gc.alloc.rate.norm         true  1000000  avgt    2       32.068            B/op
+LinkedListIterationBenchmark.sum:·gc.count                   true  1000000  avgt    2          ≈ 0          counts
+LinkedListIterationBenchmark.sum                            false        1  avgt    2        8.725           ns/op
+LinkedListIterationBenchmark.sum:·gc.alloc.rate             false        1  avgt    2        0.012          MB/sec
+LinkedListIterationBenchmark.sum:·gc.alloc.rate.norm        false        1  avgt    2       ≈ 10⁻⁴            B/op
+LinkedListIterationBenchmark.sum:·gc.count                  false        1  avgt    2          ≈ 0          counts
+LinkedListIterationBenchmark.sum                            false       10  avgt    2       20.350           ns/op
+LinkedListIterationBenchmark.sum:·gc.alloc.rate             false       10  avgt    2        0.001          MB/sec
+LinkedListIterationBenchmark.sum:·gc.alloc.rate.norm        false       10  avgt    2       ≈ 10⁻⁵            B/op
+LinkedListIterationBenchmark.sum:·gc.count                  false       10  avgt    2          ≈ 0          counts
+LinkedListIterationBenchmark.sum                            false     1000  avgt    2     2403.154           ns/op
+LinkedListIterationBenchmark.sum:·gc.alloc.rate             false     1000  avgt    2       ≈ 10⁻⁴          MB/sec
+LinkedListIterationBenchmark.sum:·gc.alloc.rate.norm        false     1000  avgt    2       ≈ 10⁻⁴            B/op
+LinkedListIterationBenchmark.sum:·gc.count                  false     1000  avgt    2          ≈ 0          counts
+LinkedListIterationBenchmark.sum                            false  1000000  avgt    2  3717970.312           ns/op
+LinkedListIterationBenchmark.sum:·gc.alloc.rate             false  1000000  avgt    2        0.008          MB/sec
+LinkedListIterationBenchmark.sum:·gc.alloc.rate.norm        false  1000000  avgt    2       32.195            B/op
+LinkedListIterationBenchmark.sum:·gc.count                  false  1000000  avgt    2          ≈ 0          counts

@@ -1,0 +1,3 @@
+Benchmark                           Mode  Cnt    Score   Error  Units
+ParallelStream.sequentialRandomSum  avgt    2  384.124          ns/op
+ParallelStream.parallelRandomSum               ~8000            years/op

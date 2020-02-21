@@ -1,0 +1,73 @@
+Benchmark                                                                        Mode    Cnt       Score    Error  Units
+ParseIntBenchmark.atsdMethodFull                                               sample  25677    2342.075 ± 14.844  us/op
+ParseIntBenchmark.atsdMethodFull:atsdMethodFull·p0.00                          sample           2007.040           us/op
+ParseIntBenchmark.atsdMethodFull:atsdMethodFull·p0.50                          sample           2138.112           us/op
+ParseIntBenchmark.atsdMethodFull:atsdMethodFull·p0.90                          sample           2822.144           us/op
+ParseIntBenchmark.atsdMethodFull:atsdMethodFull·p0.95                          sample           3440.640           us/op
+ParseIntBenchmark.atsdMethodFull:atsdMethodFull·p0.99                          sample           4407.296           us/op
+ParseIntBenchmark.atsdMethodFull:atsdMethodFull·p0.999                         sample           9485.779           us/op
+ParseIntBenchmark.atsdMethodFull:atsdMethodFull·p0.9999                        sample          35631.582           us/op
+ParseIntBenchmark.atsdMethodFull:atsdMethodFull·p1.00                          sample          37355.520           us/op
+ParseIntBenchmark.atsdMethodFullRaipc                                          sample   6592    9166.599 ± 19.123  us/op
+ParseIntBenchmark.atsdMethodFullRaipc:atsdMethodFullRaipc·p0.00                sample           8765.440           us/op
+ParseIntBenchmark.atsdMethodFullRaipc:atsdMethodFullRaipc·p0.50                sample           9011.200           us/op
+ParseIntBenchmark.atsdMethodFullRaipc:atsdMethodFullRaipc·p0.90                sample           9650.176           us/op
+ParseIntBenchmark.atsdMethodFullRaipc:atsdMethodFullRaipc·p0.95                sample           9977.856           us/op
+ParseIntBenchmark.atsdMethodFullRaipc:atsdMethodFullRaipc·p0.99                sample          10944.512           us/op
+ParseIntBenchmark.atsdMethodFullRaipc:atsdMethodFullRaipc·p0.999               sample          14113.866           us/op
+ParseIntBenchmark.atsdMethodFullRaipc:atsdMethodFullRaipc·p0.9999              sample          16236.544           us/op
+ParseIntBenchmark.atsdMethodFullRaipc:atsdMethodFullRaipc·p1.00                sample          16236.544           us/op
+ParseIntBenchmark.atsdMethodFullRaipcCode                                      sample  36001    1670.280 ± 21.311  us/op
+ParseIntBenchmark.atsdMethodFullRaipcCode:atsdMethodFullRaipcCode·p0.00        sample           1243.136           us/op
+ParseIntBenchmark.atsdMethodFullRaipcCode:atsdMethodFullRaipcCode·p0.50        sample           1439.744           us/op
+ParseIntBenchmark.atsdMethodFullRaipcCode:atsdMethodFullRaipcCode·p0.90        sample           2232.320           us/op
+ParseIntBenchmark.atsdMethodFullRaipcCode:atsdMethodFullRaipcCode·p0.95        sample           2723.840           us/op
+ParseIntBenchmark.atsdMethodFullRaipcCode:atsdMethodFullRaipcCode·p0.99        sample           3919.872           us/op
+ParseIntBenchmark.atsdMethodFullRaipcCode:atsdMethodFullRaipcCode·p0.999       sample          14712.734           us/op
+ParseIntBenchmark.atsdMethodFullRaipcCode:atsdMethodFullRaipcCode·p0.9999      sample          42991.485           us/op
+ParseIntBenchmark.atsdMethodFullRaipcCode:atsdMethodFullRaipcCode·p1.00        sample         137625.600           us/op
+ParseIntBenchmark.atsdMethodPrefix                                             sample  54295    1107.075 ±  3.717  us/op
+ParseIntBenchmark.atsdMethodPrefix:atsdMethodPrefix·p0.00                      sample            912.384           us/op
+ParseIntBenchmark.atsdMethodPrefix:atsdMethodPrefix·p0.50                      sample           1012.736           us/op
+ParseIntBenchmark.atsdMethodPrefix:atsdMethodPrefix·p0.90                      sample           1347.584           us/op
+ParseIntBenchmark.atsdMethodPrefix:atsdMethodPrefix·p0.95                      sample           1542.554           us/op
+ParseIntBenchmark.atsdMethodPrefix:atsdMethodPrefix·p0.99                      sample           2257.060           us/op
+ParseIntBenchmark.atsdMethodPrefix:atsdMethodPrefix·p0.999                     sample           3063.808           us/op
+ParseIntBenchmark.atsdMethodPrefix:atsdMethodPrefix·p0.9999                    sample           3993.571           us/op
+ParseIntBenchmark.atsdMethodPrefix:atsdMethodPrefix·p1.00                      sample           6987.776           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipc                                        sample  14855    4053.350 ± 10.148  us/op
+ParseIntBenchmark.atsdMethodPrefixRaipc:atsdMethodPrefixRaipc·p0.00            sample           3739.648           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipc:atsdMethodPrefixRaipc·p0.50            sample           3969.024           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipc:atsdMethodPrefixRaipc·p0.90            sample           4320.461           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipc:atsdMethodPrefixRaipc·p0.95            sample           4489.216           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipc:atsdMethodPrefixRaipc·p0.99            sample           5079.040           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipc:atsdMethodPrefixRaipc·p0.999           sample           7089.750           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipc:atsdMethodPrefixRaipc·p0.9999          sample          22120.523           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipc:atsdMethodPrefixRaipc·p1.00            sample          27164.672           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipcCode                                    sample  94461     636.021 ±  3.017  us/op
+ParseIntBenchmark.atsdMethodPrefixRaipcCode:atsdMethodPrefixRaipcCode·p0.00    sample            540.672           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipcCode:atsdMethodPrefixRaipcCode·p0.50    sample            583.680           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipcCode:atsdMethodPrefixRaipcCode·p0.90    sample            737.280           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipcCode:atsdMethodPrefixRaipcCode·p0.95    sample            822.272           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipcCode:atsdMethodPrefixRaipcCode·p0.99    sample           1288.192           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipcCode:atsdMethodPrefixRaipcCode·p0.999   sample           2412.855           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipcCode:atsdMethodPrefixRaipcCode·p0.9999  sample          11776.521           us/op
+ParseIntBenchmark.atsdMethodPrefixRaipcCode:atsdMethodPrefixRaipcCode·p1.00    sample          40173.568           us/op
+ParseIntBenchmark.jdkMethodFull                                                sample  22902    2625.758 ±  9.851  us/op
+ParseIntBenchmark.jdkMethodFull:jdkMethodFull·p0.00                            sample           2277.376           us/op
+ParseIntBenchmark.jdkMethodFull:jdkMethodFull·p0.50                            sample           2531.328           us/op
+ParseIntBenchmark.jdkMethodFull:jdkMethodFull·p0.90                            sample           2920.448           us/op
+ParseIntBenchmark.jdkMethodFull:jdkMethodFull·p0.95                            sample           3207.168           us/op
+ParseIntBenchmark.jdkMethodFull:jdkMethodFull·p0.99                            sample           3989.381           us/op
+ParseIntBenchmark.jdkMethodFull:jdkMethodFull·p0.999                           sample           7178.330           us/op
+ParseIntBenchmark.jdkMethodFull:jdkMethodFull·p0.9999                          sample          18511.908           us/op
+ParseIntBenchmark.jdkMethodFull:jdkMethodFull·p1.00                            sample          25886.720           us/op
+ParseIntBenchmark.jdkMethodPrefix                                              sample  22533    2671.465 ± 21.817  us/op
+ParseIntBenchmark.jdkMethodPrefix:jdkMethodPrefix·p0.00                        sample           2232.320           us/op
+ParseIntBenchmark.jdkMethodPrefix:jdkMethodPrefix·p0.50                        sample           2420.736           us/op
+ParseIntBenchmark.jdkMethodPrefix:jdkMethodPrefix·p0.90                        sample           3063.808           us/op
+ParseIntBenchmark.jdkMethodPrefix:jdkMethodPrefix·p0.95                        sample           3985.408           us/op
+ParseIntBenchmark.jdkMethodPrefix:jdkMethodPrefix·p0.99                        sample           6479.872           us/op
+ParseIntBenchmark.jdkMethodPrefix:jdkMethodPrefix·p0.999                       sample          13269.598           us/op
+ParseIntBenchmark.jdkMethodPrefix:jdkMethodPrefix·p0.9999                      sample          36625.383           us/op
+ParseIntBenchmark.jdkMethodPrefix:jdkMethodPrefix·p1.00                        sample          47251.456           us/op

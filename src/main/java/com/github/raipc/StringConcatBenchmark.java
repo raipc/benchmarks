@@ -1,14 +1,19 @@
 package com.github.raipc;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-
-import static com.github.raipc.StringConcatBenchmark.Query.*;
+import static com.github.raipc.StringConcatBenchmark.Query.FORMAT_PARAM_NAME;
+import static com.github.raipc.StringConcatBenchmark.Query.FORMAT_PARAM_VALUE;
+import static com.github.raipc.StringConcatBenchmark.Query.LIMIT_PARAM_NAME;
+import static com.github.raipc.StringConcatBenchmark.Query.METADATA_FORMAT_PARAM_NAME;
+import static com.github.raipc.StringConcatBenchmark.Query.QUERY_ID_PARAM_NAME;
+import static com.github.raipc.StringConcatBenchmark.Query.Q_PARAM_NAME;
 
 @State(Scope.Thread)
 public class StringConcatBenchmark {
