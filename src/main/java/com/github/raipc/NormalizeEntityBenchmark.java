@@ -22,7 +22,7 @@ import org.openjdk.jmh.runner.options.TimeValue;
 
 @Warmup(iterations = 1, time = 5)
 @Measurement(iterations = 10)
-@BenchmarkMode(Mode.AverageTime)
+@BenchmarkMode(Mode.SampleTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @State(Scope.Benchmark)
 public class NormalizeEntityBenchmark {
@@ -90,6 +90,29 @@ public class NormalizeEntityBenchmark {
 			}
 		}
 		return arr == null ? entityLc : new String(arr);
+	}
+
+	@Benchmark
+	public String manualReplaceOpt() {
+		final String entityLc = entity.trim().toLowerCase(Locale.US);
+		final int length = entityLc.length();
+		if (length == 0) {
+			throw new IllegalArgumentException("Illegal name: '" + entity + "'");
+		}
+		for (int i = 0; i < length; i++) {
+			if (Character.isWhitespace(entityLc.charAt(i))) {
+				// space found -- we need to allocate the array for modifications
+				char[] arr = entityLc.toCharArray();
+				arr[i] = '_';
+				for (int j = i + 1; j < length; j++) {
+					if (Character.isWhitespace(arr[j])) {
+						arr[j] = '_'; // reduce number of writes: put modifications only
+					}
+				}
+				return new String(arr);
+			}
+		}
+		return entityLc;
 	}
 
 	@Benchmark
